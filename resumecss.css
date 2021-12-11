@@ -58,7 +58,9 @@ body {
 #name-social-container {
     margin-top: 15vh;
 }
-
+#nav-box{
+    display: none;
+}
 #my-name {
     font-size: 3rem;
     letter-spacing: 0.1rem;
@@ -249,6 +251,132 @@ section:target {
     left: 50%;
 }
 
+@media screen and (max-width: 600px){
+    .timeline-divider {
+    left: 5%; }
+    .timeline-box {
+    width: 80%;
+    left: 12%;
+
+     }
+     .timeline-box:nth-child(2n) {
+    left: 12%;
+}
+.timeline-box::after {
+    left: -12% !important;
+
+}
+.timeline {
+    
+    border: none;
+
+}
+html{
+    font-size: 1rem;
+}
+#body-header {
+    height: 45vh;
+}
+#body-nav {
+    display: none;
+}
+#name-social-container {
+    margin-top: 5vh;
+}
+#my-name {
+    font-size: 2.5rem;
+    letter-spacing: 0.09rem;
+    margin-bottom: none;
+    margin-top: -3vh;
+    
+}
+.social-icons{
+    /*color: red;*/
+    margin-top: -3vh;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+#my-image {
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+label{
+    display: block;
+    cursor: pointer;
+
+}
+
+#nav-box{
+    margin-top: -3vh;
+    display: block;
+    text-align: right;
+    margin-right: 3vw;
+}
+.nav-box-menu{
+    display: block;
+    right: 1vw;
+    text-align: right;
+    width: 100%;
+    display: none;
+}
+.nav-box-menu a{
+    display: block;
+    //border-bottom: 1px solid grey;
+    margin: 0;
+}
+
+#toggle:checked + .nav-box-menu {
+    display: block;
+    text-align: right;
+}
+.horizontal-list-box {
+    position: absolute;
+    width: 25vw;
+    right: 0vw;
+    font-size: 2rem;
+    overflow-wrap: anywhere;
+    background-color: lightgrey;
+    text-align: left;
+    list-style: none;
+    padding-left: 2px;
+    padding-top: 6px;
+    margin: 0px;
+}
+.horizontal-list-box li {
+    display: block;
+    text-align: left;
+    margin: 3px 6px 6px 3px;
+    font-weight: 600;
+    font-size: 0.7rem;
+
+}
+
+
+.horizontal-list-box li a{
+    color: darkslategrey;
+    text-decoration: none;
+    margin: 3px;
+}
+.nav-menu li a:hover {
+    color: black;
+    border-bottom: none;
+
+}
+
+/*
+.timeline-box:nth-child(2n+1)::after {
+    left: -12%;
+
+}
+.timeline-box:nth-child(2n)::after {
+    left: -12%;
+
+}*/
+
+}
+
 .timeline-traveller {
     position: sticky;
     top: 30%;
@@ -321,6 +449,7 @@ section:target {
     /*background-color: #13386fe0;*/
     color: white;
     padding-bottom: 40px;
+    width: 100vw !important;
 }
 
 #contact h1,
@@ -329,41 +458,46 @@ section:target {
 }
 
 #contact-form {
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 #contact-container {
+    width: 100vw !important;
     display: flex;
 }
 
 #my-details-container {
-    width: 35%;
-    margin-left: 6%;
+    width: 100 vw !important;
+    margin-left: 10%;
 }
 
 #my-details-container h3 {
     color: white;
     font-weight: 550;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    width: 100vw;
 }
 
 #contact-form-container {
-    width: 50%;
+    width: 80vw;
 }
 
 #my-details-container p {
     color: #d9dcdd;
     font-size: 0.9rem;
+    width: 100vw;
 }
 
 .my-details-info-container {
     margin-bottom: 20px;
     color: #d9dcdd;
+    width: 100vw;
 }
 
 .my-details-info-container span {
-    margin-left: 0.4rem;
+    margin-left: 5%;
     font-size: 0.95rem;
+    width: 100vw;
 }
 
 .my-details-info-container i {
@@ -371,17 +505,21 @@ section:target {
 }
 
 .my-details-icon {
-    width: 1rem;
-    height: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
     vertical-align: bottom;
     margin-right: 0.5rem;
+}
+.row-wise{
+    width: 40vw;
+    display: inline-block;
 }
 
 
 #contact-form input,
 textarea {
     max-width: 90%;
-    margin: 15px;
+   // margin: 15px;
     padding: 4px 10px;
     border: 0px solid transparent;
     border-bottom: 2px solid white;
@@ -482,5 +620,6 @@ button:focus {
 .m0 {
     margin: 0;
 }
+
 
 		

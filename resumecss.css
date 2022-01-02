@@ -149,7 +149,7 @@ section:target {
 
 #about-para {
     padding: 10px;
-    width: 40%;
+    width: 30%;
     height: 100%;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -566,8 +566,7 @@ animation-timing-function: ease-out;
 
 #contact {
 
-background-color: #9e9b9b29;
-
+      background-color: #9e9b9b29 !important;
    /* background-color: #0abcf9;
     background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);*/
     /*background-image: linear-gradient(50deg,#2857a4 0%, #5378b1 74%);*/

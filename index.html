@@ -8,20 +8,21 @@
     <link rel="stylesheet" type="text/css" href="resumecss.css">
   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-    <header id="body-header">
-        <div id="nav-box">
-        <label for="toggle"> &#9776 </label>
+</head>
+<body  >
+
+    <div id="nav-box" >
+        <label for="toggle" style=" transform: scale(1.8,1.3); border: 1.5px solid black;" onclick="helpr2()"> &#9776 </label>
         <input type="checkbox" id="toggle" style="display:none;" />
-         <ul class="horizontal-list-box text-center nav-menu nav-box-menu">
-                <li>
-                    <a href="#"> Home </a>
-                </li>
-                <li>
-                    <a href="#about"> About </a>
+        
+         <ul class="horizontal-list-box text-center nav-menu nav-box-menu" id="geg" onclick="helpr()" >
+               <li>
+                    <a href="#" class="underanc">   Home </a>
+                </li> 
+                <li > 
+                    <a href="#about" class="underanc">  About  </a>  
                 </li>
                 <li>
                     <a href="#skills"> Skills </a>
@@ -40,6 +41,8 @@
                 </li>
             </ul>
     </div>
+    <header id="body-header" onclick="helpr()">
+        
         <nav id="body-nav">
 
             <ul class="horizontal-list text-center nav-menu">
@@ -73,42 +76,20 @@
                     Sagar Saini
                 </h1>
             </div>
-            <div>
-                <ul class="horizontal-list text-center social-icons" style="padding-top: 2.5vh;">
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                           <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
 
         </div>
 
     </header>
-    <main>
+    <main onclick="helpr()">
 
         <section id="about">
             <div id="my-image">
                 <img src="mypic.jpg">
             </div>
-            <div id="about-para" style="width:50%;">
+            <div id="about-para" ">
 
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and <span class="text-highlight">typesetting industry</span>. Lorem Ipsum has been the industry's standard <span class="text-highlight">dummy text ever</span>
+                    I am a <span class="text-highlight"> 3rd year </span> Undergraduate (2019-2023) pursuing B.Tech from <span class="text-highlight"> IIIT Sonepat</span>  in <span class="text-highlight"> Computer Science & Engineering. </span> <span class="text-highlight">
             </div>
 
 
@@ -117,14 +98,14 @@
 
 
         <section id="skills">
-            <h1 class="section-heading mb75px ">
+            <h1 class="section-heading  ">
                 <span>
                     <i class="fas fa-chalkboard-teacher"></i>
                 </span>
                 <span> SKILLS </span>
             </h1>
 
-            <div class="skills-display" style="width:50%;">
+            <div class="skills-display">
 
                 <div class="skill-progress">
                     <div class="eighty-five-percent mb-blue">
@@ -171,106 +152,7 @@
 
         </section>
 
-        <section id="experience">
-
-            <h1 class="section-heading mb75px">
-                <span>
-                    <i class="fas fa-briefcase"></i>
-                </span>
-                <span> Work Experience </span>
-            </h1>
-
-            <div class="timeline">
-                <div class="timeline-box">
-                </div>
-                <div class="timeline-box">
-                </div>
-                <div class="timeline-box">
-                </div>
-                <div class="timeline-box">
-                </div>
-                <div class="timeline-divider">
-                    <div class="timeline-traveller">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </section>
-
         <section id="education">
-
-        </section>
-        <!--  
-        <section id="portfolio">
-            <h1 class="section-heading mb75px">
-                <span>
-                    <i class="fas fa-th-list"></i>
-                </span>
-                <span> Portfolio </span>
-            </h1>
-
-            <div id="portfolio-container">
-
-                <div class="portfolio-image-container">
-                    <img src="image/codezen_2.png">
-                    <div class="portfolio-details">
-                        <p>
-                            Write here basic details about the project.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="image/project_2.jpeg">
-                    <div class="portfolio-details">
-                        <p>
-                            Write here basic details about the project.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="image/project.jpeg">
-                    <div class="portfolio-details">
-                        <p>
-                            Write here basic details about the project.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="image/project_3.png">
-                    <div class="portfolio-details">
-                        <p>
-                            Write here basic details about the project.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="image/codezen.png">
-                    <div class="portfolio-details">
-                        <p>
-                            Write here basic details about the project.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="image/tree.jpeg">
-                    <div class="portfolio-details">
-                        <p>
-                            Write here basic details about the project.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        -->
 
         </section>
 
@@ -279,83 +161,51 @@
                 <span>
                     <i class="far fa-address-card"></i>
                 </span>
-                <span> Get In Touch </span>
+                <span>Get In Touch </span>
 
             </h1>
         <br>
-            <div id="contact-container">
+            
 
-                <!-- <div id="contact-form-container">
-                    <form id="contact-form">
-                        <input id="input-name" name="name" type="text" placeholder="Your Name">
-                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
-                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
-                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
-                    </form>
-                </div> -->
-                <div id="my-details-container">
+            <div class="text-center social-icons" style="margin-top: 0.6vh;margin-bottom: 20px;">
 
-                    <!-- <h3> Get In touch </h3> 
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p> -->
+                <ul class="horizontal-list" style="justify-items: center;">
 
-                    <!-- //<h3> Get In Touch </h3>
-                     -->
-                     
-                    <div class="my-details-info-container row-wise">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>+91-8650094264</span>
-                    </div> 
-                    <div class="my-details-info-container row-wise">
-                        <i class="far fa-envelope"></i>
-                        <span>sagarsaini005@gmail.com</span>
-                    </div> 
+                    <li>
+                        <a href="https://www.linkedin.com/in//">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+
                     
-                    <div class="my-details-info-container row-wise">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Saharanpur, India</span>
-                    </div>
-                </div>
-            </div>
-            <!--
-
-            <div class="text-center social-icons">
-
-                <ul class="horizontal-list">
 
                     <li>
-                        <a href="https://www.linkedin.com/in/manisha-khattar-b5663641/">
-                            <i class="fab fa-linkedin-in"></i>
+                        <a href="" target="_blank">
+                            <i class="fab fa-github"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://stackoverflow.com/users/5608414/manisha?tab=profile" target="_blank">
-                            <i class="fab fa-stack-overflow"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://plus.google.com/u/0/103030702784925512939" target="_blank">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.facebook.com/manishakhattar54">
+                        <a href="">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="https://www.quora.com/profile/Manisha-Khattar" target="_blank">
-                            <i class="fab fa-quora"></i>
-                        </a>
-                    </li>
+               
                 </ul>
-            </div> --->
+            </div> 
         </section>
 
     </main>
+    <script type='text/javascript'>
 
+function helpr()
+{   var y=document.getElementById("toggle");
+    var x=document.getElementById("geg");
+    y.checked=false;
+}
+
+
+</script>
 </body>
 </html>
